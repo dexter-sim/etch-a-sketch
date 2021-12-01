@@ -1,0 +1,40 @@
+* {
+    text-align: center;
+}
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 5%;
+}
+
+#container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pixel {
+    border: 1px black solid;
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+}
+
+.footnote {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
