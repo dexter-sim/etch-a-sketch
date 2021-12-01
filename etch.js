@@ -1,6 +1,6 @@
 let size = parseInt(prompt("Enter a positive integer for the size of the grid"));
 let rainbow = false;
-let color = "#FFFFFF";
+let color = "#000000";
 const arr = [];
 
 const container = document.getElementById("container");

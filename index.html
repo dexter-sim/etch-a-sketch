@@ -9,17 +9,19 @@
 
     <body>
         <h1>Etch-A-Sketch</h1>
+        <div class="main">
+            <div class="settings">
+                <button id="reset">reset</button>
+                <div style="text-align: center;"><input onchange="colorSelected(this)" type="color"></div>
+                <button id="colormode">Color Mode</button>
+                <button id="rainbowmode">Rainbow Mode</button>
+                <button id="eraser">Eraser</button>
+                <button id="clear">Clear</button>
+            </div>
 
-        <div class="settings">
-            <button id="reset">reset</button>
-            <button id="colormode"><input onchange="colorSelected(this)" type="color"></button>
-            <button id="rainbowmode">Rainbow Mode</button>
-            <button id="eraser">Eraser</button>
-            <button id="clear">Clear</button>
-        </div>
+            <div class="container" id="container">
 
-        <div class="container" id="container">
-
+            </div>
         </div>
         
         <div class="footnote">

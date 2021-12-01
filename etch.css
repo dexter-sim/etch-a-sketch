@@ -2,9 +2,17 @@
     text-align: center;
 }
 
-.settings {
+.main {
     display: flex;
     flex-direction: row;
+    margin-left: 10%;
+    margin-right: 5%;
+    justify-content: center;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
