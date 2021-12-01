@@ -4,14 +4,21 @@ let color = "#000000";
 const arr = [];
 
 const container = document.getElementById("container");
-//const colorbtn = document.getElementById("colormode");
+const colorbtn = document.getElementById("colormode");
 const rainbowbtn = document.getElementById("rainbowmode");
 const eraser = document.getElementById("eraser");
 const clear = document.getElementById("clear");
 
-
+colorbtn.addEventListener("click", () => { rainbow = false; })
 rainbowbtn.addEventListener("click", () => { rainbow = true; });
 eraser.addEventListener("click", () => { rainbow = false; color = "#FFFFFF"; });
+clear.addEventListener("click", clearAll);
+
+function clearAll(){
+    for (let i = 0; i < arr.length; i++){
+        arr[i].style.backgroundColor = "#FFFFFF";
+    }
+}
 
 function colorSelected(element){
     color = element.value;

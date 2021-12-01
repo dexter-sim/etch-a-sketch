@@ -1,5 +1,8 @@
 * {
     text-align: center;
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .main {
@@ -17,7 +20,25 @@
 }
 
 button {
-    padding: 4%;
+    background-color: lightgray;
+    border-radius: 8px;
+    border: 2px black solid;
+    width: 150px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+}
+button:hover {
+    background-color: darkgrey;
+}
+button:active {
+    transform: scale(0.96);
+}
+
+input {
+    border: transparent;
+    width: 90px;
+    height: 90px;
 }
 
 #container {
