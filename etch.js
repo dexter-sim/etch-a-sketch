@@ -1,7 +1,21 @@
 let size = parseInt(prompt("Enter a positive integer for the size of the grid"));
-
+let rainbow = false;
+let color = "#FFFFFF";
 const arr = [];
+
 const container = document.getElementById("container");
+//const colorbtn = document.getElementById("colormode");
+const rainbowbtn = document.getElementById("rainbowmode");
+const eraser = document.getElementById("eraser");
+const clear = document.getElementById("clear");
+
+
+rainbowbtn.addEventListener("click", () => { rainbow = true; });
+eraser.addEventListener("click", () => { rainbow = false; color = "#FFFFFF"; });
+
+function colorSelected(element){
+    color = element.value;
+}
 
 function setup(size){
     arr.length = 0;
@@ -22,7 +36,11 @@ function setup(size){
 }
 
 function hoverfn(){
-    this.style.backgroundColor = "grey";
+    if (rainbow){
+        this.style.backgroundColor = "#" + (Math.floor(Math.random() * 16777215)).toString(16);
+    } else {
+        this.style.backgroundColor = color;
+    }
 }
 
 setup(size);
