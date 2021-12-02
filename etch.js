@@ -60,7 +60,7 @@ function hoverfn(){
     }
 }
 
-// Update the current slider value (each time you drag the slider handle)
+// Updates the current slider value
 slider.oninput = () => {
     output.textContent = slider.value + "x" + slider.value;
     setup(slider.value);
