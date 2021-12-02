@@ -6,7 +6,7 @@
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 42px;
 }
 
 a:link {
@@ -63,9 +63,7 @@ input:hover{
     flex: 3;
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex-direction: column;    
 }
 
 .row {
@@ -86,42 +84,41 @@ input:hover{
 }
 
 .slidecontainer {
-    width: 100%; /* Width of the outside container */
-  }
+    width: 100%;
+}
   
-  .slider {
+.slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
-    height: 15px; /* Specified height */
+    width: 100%;
+    height: 15px;
     border-radius: 5px;
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7; 
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
   
-  /* Mouse-over effects */
-  .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
+.slider:hover {
+    opacity: 1;
+}
   
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+    background: #04AA6D;
+    cursor: pointer;
+}
   
-  .slider::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+.slider::-moz-range-thumb, .slider::-webkit-slider-thumb {
+    width: 25px; 
+    height: 25px;
     border-radius: 50%;
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+    background: #04AA6D; 
+    cursor: pointer; 
+}
