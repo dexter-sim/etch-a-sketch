@@ -1,7 +1,6 @@
-let size = parseInt(prompt("Enter a positive integer for the size of the grid"));
 let rainbow = false;
 let color = "#000000";
-const arr = [];
+let arr = [];
 
 const container = document.getElementById("container");
 const colorbtn = document.getElementById("colormode");
@@ -25,7 +24,8 @@ function colorSelected(element){
 }
 
 function setup(size){
-    arr.length = 0;
+    arr = [];
+    container.innerHTML = "";
     
     for (let i = 0 ; i < size; i++){
         const div = document.createElement("div");
@@ -51,6 +51,17 @@ function hoverfn(){
     } else {
         this.style.backgroundColor = color;
     }
+}
+
+let slider = document.getElementById("myRange");
+let output = document.getElementById("dimension");
+let size = parseInt(slider.value);
+output.textContent = slider.value + "x" + slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = () => {
+    output.textContent = slider.value + "x" + slider.value;
+    setup(slider.value);
 }
 
 setup(size);
