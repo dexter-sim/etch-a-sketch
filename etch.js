@@ -37,6 +37,9 @@ function setup(size){
             div.appendChild(pixel);
             pixel.addEventListener("mouseover", hoverfn);
             arr.push(pixel);
+            pixel.style.width = JSON.stringify(600/size) + "px";
+            pixel.style.height = JSON.stringify(600/size) + "px";
+
         }
         container.appendChild(div);
     }
